@@ -18,10 +18,10 @@ def getMessage():
 def webhook():
    bot.remove_webhook()
    # TO DO: Edit the value of variable heroku_app_name according to your Heroku application name
-   railway_app_name = "algo-capstone-telebot"
+   railway_public_domain = "https://web-production-c6f7.up.railway.app/"
 
    # NOTE: You need to use a publically available URL that the Telegram servers can reach.
-   bot.set_webhook(url=f'https://web-production-c6f7.up.railway.app//{TOKEN}')
+   bot.set_webhook(url=f'https://{railway_public_domain}/{TOKEN}')
    return "Bot is running", 200
 
 if __name__ == "__main__":
