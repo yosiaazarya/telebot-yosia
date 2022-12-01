@@ -21,7 +21,7 @@ def webhook():
    railway_app_name = "algo-capstone-telebot"
 
    # NOTE: You need to use a publically available URL that the Telegram servers can reach.
-   bot.set_webhook(url=f'https://{railway_app_name}.com/{TOKEN}')
+   bot.set_webhook(url=f'https://web-production-c6f7.up.railway.app//{TOKEN}')
    return "Bot is running", 200
 
 if __name__ == "__main__":
